@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<manifest>
+    <remote name="yocto-cgit" fetch="http://git.yoctoproject.org/cgit/cgit.cgi" review="http://git.yoctoproject.org/cgit/cgit.cgi" />
+
+    <!-- no more usage of meta-metrological. alternate is meta-wpe -->
+    <remove-project name="Metrological/meta-metrological" path="meta-metrological" />
+    <remove-project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe"/>
+
+    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="thud" />>
+
+    <!-- remove morty branches of oe layers and swith to thud -->
+    <remove-project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
+    <remove-project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="rdk/morty"/>
+    <remove-project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
+    <remove-project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
+    <remove-project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="rdk/morty"/>
+    <remove-project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
+
+    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="1.40"/>
+    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="master"/>
+    <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="thud"/>
+    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="thud"/>
+    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="thud"/>
+    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="thud"/>
+
+    <project name="components/generic/rdk-oe/meta-cmf-freescale" path="meta-cmf-freescale" revision="master"/>
+
+    <!-- No GPLv3 licensed components support on RDK so, meta-gplv2 layer required -->
+    <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto-cgit"/>
+    <project name="meta-rust/meta-rust" path="meta-rust" revision="master" remote="github"/>
+
+    <project name="andrey-konovalov/meta-freescale" path="meta-freescale" remote="github" revision="mmwg-master" />
+</manifest>
