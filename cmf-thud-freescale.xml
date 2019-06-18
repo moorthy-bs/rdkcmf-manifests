@@ -30,5 +30,5 @@
     <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto-cgit"/>
     <project name="meta-rust/meta-rust" path="meta-rust" revision="master" remote="github"/>
 
-    <project name="andrey-konovalov/meta-freescale" path="meta-freescale" remote="github" revision="mmwg-master" />
+    <project name="linaro-mmwg/meta-freescale" path="meta-freescale" remote="github" revision="mmwg-master" />
 </manifest>
