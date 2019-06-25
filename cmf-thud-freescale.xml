@@ -7,7 +7,7 @@
     <remove-project name="Metrological/meta-metrological" path="meta-metrological" />
     <remove-project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe"/>
 
-    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="thud" />>
+    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="3f3f19246e51be9a9a04d6ac8603325730b6f0a2" />>
 
     <!-- remove morty branches of oe layers and swith to thud -->
     <remove-project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
