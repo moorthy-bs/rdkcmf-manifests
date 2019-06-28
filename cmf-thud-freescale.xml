@@ -31,7 +31,7 @@
     <remove-project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
     <remove-project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="rdk-next"/>
     
-    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="8ac5dca2d4b64e6e0d5972cbe47a5ff8d0ae1973q"/>
+    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="8ac5dca2d4b64e6e0d5972cbe47a5ff8d0ae1973"/>
     <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="74d1c996de5e784bff21f1744eeacc6f8bc1cbb3"/>
     <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="fcc99e1a435389e7dd451250bf30b84cfbd72277"/>
     <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="fa479a505ca51a4a1e544fcd1659dc610ed77763"/>
