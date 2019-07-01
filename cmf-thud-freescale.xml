@@ -45,7 +45,6 @@
     
     <!-- No GPLv3 licensed components support on RDK so, meta-gplv2 layer required -->
     <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto-cgit"/>
-    <project name="meta-rust/meta-rust" path="meta-rust" revision="master" remote="github"/>
 
     <project name="linaro-mmwg/meta-freescale" path="meta-freescale" remote="github" revision="mmwg-master" />
 </manifest>
