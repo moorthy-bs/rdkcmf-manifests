@@ -2,10 +2,9 @@
 
 <manifest>
     <!-- no more usage of meta-metrological. alternate is meta-wpe -->
-    <remove-project name="Metrological/meta-metrological" path="meta-metrological" />
     <remove-project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe"/>
 
-    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="26217cf90b3ee0cc8d784ba028d7d7b12bfa3fcb" />>
+    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="acf7df1a2f985ed293f74d1cd2f1dca8ffee3510" />>
 
     <!-- remove morty branches of oe layers and swith to thud -->
     <remove-project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
@@ -16,13 +15,13 @@
     <remove-project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
 
     <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="1.40"/>
-    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="7d701505fa99cacea5dd3791a2cb4e06b974226b"/>
+    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="c2a40a84b73cefb34998219a1f3560ade8832e51"/>
     <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="thud"/>
     <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="thud"/>
     <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="thud"/>
     <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="thud"/>
 
-    <project name="components/generic/rdk-oe/meta-cmf-freescale" path="meta-cmf-freescale" revision="master"/>
+    <project name="components/generic/rdk-oe/meta-cmf-freescale" path="meta-cmf-freescale" revision="master" upstream="master"/>
 
     <remove-project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
     <remove-project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
@@ -32,14 +31,14 @@
     <remove-project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="rdk-next"/>
     <remove-project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
     <remove-project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>
-    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="976c400053547573719631368bfb8df0844ed249"/>
-    <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="c6d05964c6d6b06139185fb107c60b8eeb87ab1c"/>
-    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="22ec318b02767f8ffcf871225b94d9b192c7e0d3"/>
+    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="3d94cc00acd617c83c89e8c724114e74a0d21f6e"/>
+    <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="ba7a8e2bd5d04d539136bc4474bb9cf74d913d66"/>
+    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="e1bec56a9d2e1bc1374eebf5843f89f929fd0a61"/>
     <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="fa479a505ca51a4a1e544fcd1659dc610ed77763"/>
     <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="cb3e5db9b6d362e5eee0a94e51fff3938c040f55"/>
-    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="04220e1d33fed53680d1dc225d12a26e67578c04"/>
-    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="5b0c244bbe564c2123324bd1f6cbadead60b4188"/>
-    <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="cc0d47834c07502a13f64bb1d3367ccae2850009"/>
+    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="56fcd823c21ce5515812ed6d12620aaa26db025d"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="db230332a2ccb20354aa26567940d361acfb1494"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="d4a1b824775318b237ad9cf92593796bb6d208eb"/>
     
     <!-- No GPLv3 licensed components support on RDK so, meta-gplv2 layer required -->
     <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto"/>
