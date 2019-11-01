@@ -43,5 +43,5 @@
     <!-- No GPLv3 licensed components support on RDK so, meta-gplv2 layer required -->
     <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto"/>
 
-    <project name="linaro-mmwg/meta-freescale" path="meta-freescale" remote="github" revision="mmwg-master" />
+    <project name="petegriffin/meta-freescale" path="meta-freescale" remote="github" revision="L4.14.98-2.0.0-graphics-imx8m-evk-ion-optee" />
 </manifest>
