@@ -4,24 +4,7 @@
     <!-- no more usage of meta-metrological. alternate is meta-wpe -->
     <remove-project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe"/>
 
-    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="acf7df1a2f985ed293f74d1cd2f1dca8ffee3510" />>
-
-    <!-- remove morty branches of oe layers and swith to thud -->
-    <remove-project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
-    <remove-project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="rdk/morty"/>
-    <remove-project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
-    <remove-project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
-    <remove-project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="rdk/morty"/>
-    <remove-project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
-
-    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="1.40"/>
-    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="c2a40a84b73cefb34998219a1f3560ade8832e51"/>
-    <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="thud"/>
-    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="thud"/>
-    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="thud"/>
-    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="thud"/>
-
-    <project name="components/generic/rdk-oe/meta-cmf-freescale" path="meta-cmf-freescale" revision="master" upstream="master"/>
+    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="acf7df1a2f985ed293f74d1cd2f1dca8ffee3510" />
 
     <remove-project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
     <remove-project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
@@ -40,8 +23,5 @@
     <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="db230332a2ccb20354aa26567940d361acfb1494"/>
     <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="d4a1b824775318b237ad9cf92593796bb6d208eb"/>
     
-    <!-- No GPLv3 licensed components support on RDK so, meta-gplv2 layer required -->
-    <project name="meta-gplv2" path="meta-gplv2" revision="thud" remote="yocto"/>
-
     <project name="petegriffin/meta-freescale" path="meta-freescale" remote="github" revision="L4.14.98-2.0.0-graphics-imx8m-evk-ion-optee" />
 </manifest>
