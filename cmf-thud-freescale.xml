@@ -23,5 +23,5 @@
     <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="db230332a2ccb20354aa26567940d361acfb1494"/>
     <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="d4a1b824775318b237ad9cf92593796bb6d208eb"/>
     
-    <project name="moorthy-bs/meta-freescale" path="meta-freescale" remote="github" revision="06786eb7c5449cd3839e0aa8b199cdffe4f6f7e7" />
+    <project name="moorthy-bs/meta-freescale" path="meta-freescale" remote="github" revision="rdkcmf-support" />
 </manifest>
